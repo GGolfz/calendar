@@ -74,7 +74,7 @@ export default {
       }
     },
     async goto(year) {
-      await this.$router.push(`/calendar/${year}`)
+      await this.$router.replace(`/calendar/${year}`)
       await this.getData()
     }
   }
